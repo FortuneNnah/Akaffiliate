@@ -10,30 +10,76 @@ body{
 }
 
 .header{
-    font-family: montserrat;
+    font-family: Montserrat, system-ui, sans-serif;
     padding: 20px 30px;
-    background-color: #fff;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.15);
+    background-color: #ffffff;
+    box-shadow: 0 8px 20px rgba(16, 29, 55, 0.12);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #333;
+    gap: 24px;
+    position: sticky;
+    top: 0;
+    z-index: 50;
 }
 
- .logo h1{  
+.logo h2{
     font-size: 29px;
-    color: #333; 
 }
 
-.navLinks{
+.logo a{
+    display: inline-flex;
+    align-items: center;
+    color: #1f2f54;
+    text-decoration: none;
+    gap: 10px;
+    font-weight: 800;
+    font-size: 1.35rem;
+}
+
+.navLinks ul{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
 }
 
 .navLinks li{
     list-style: none;
+}
+
+.navLinks li a{
+    text-decoration: none;
+    color: #2a3d66;
+    font-weight: 600;
+    font-size: 0.97rem;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.navLinks li a:hover,
+.navLinks li a:focus-visible{
+    color: #1a60ff;
+    transform: translateY(-1px);
+}
+
+.header-actions .header-cta{
+    font-size: 0.95rem;
+    border-radius: 999px;
+    border: none;
+    padding: 10px 18px;
+    background-color: #1a60ff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 8px 18px rgba(26, 96, 255, 0.28);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.header-actions .header-cta:hover,
+.header-actions .header-cta:focus-visible{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(26, 96, 255, 0.36);
 }
 
 .navLinks li a{
@@ -49,25 +95,87 @@ body{
     color: #007BFF;
 }
 
+
 .herosection{
+    position: relative;
     background-image: url(assets/img/Car1.jpg);
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.hero-overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 20, 30, 0.55);
+    backdrop-filter: blur(1.5px);
+    z-index: 1;
 }
 
 .herosection .herotxt{
+    position: relative;
+    z-index: 2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 20px 30px 60px;
-    height: 100%;
+    gap: 16px;
+    max-width: 640px;
     color: #fff;
+    text-shadow: 0 6px 14px rgba(0,0,0,0.35);
+}
+
+.herosection .herotxt small{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #dde4ef;
+    font-weight: 600;
 }
 
 .herotxt h1{
-    font-size: 3.5rem;
+    font-size: clamp(2rem, 5vw, 3.6rem);
+    font-weight: 800;
+    line-height: 1.12;
+    margin-bottom: 0;
+}
+
+.herotxt p{
+    max-width: 500px;
+    color: #e5ecff;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.hero-actions{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.btn{
+    border: 0;
+    border-radius: 8px;
+    padding: 12px 20px;
     font-weight: 700;
-    margin-bottom: 20px;
-    
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.btn:hover{
+    transform: translateY(-1px);
+    opacity: 0.95;
+}
+
+.btn.primary{
+    background: #3271ff;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(50,113,255,0.35);
+}
+
+.btn.secondary{
+    background: rgba(255,255,255,0.18);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.56);
 }
