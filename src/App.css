@@ -53,7 +53,57 @@ body{
     transform: translateY(-1px);
 }
 
-.header-actions .header-cta{
+.nav-toggle{
+    display: none;
+    width: 42px;
+    height: 42px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.nav-toggle span{
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #2a3d66;
+    border-radius: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-toggle span:nth-child(1){
+    top: 12px;
+}
+
+.nav-toggle span:nth-child(2){
+    top: 20px;
+}
+
+.nav-toggle span:nth-child(3){
+    top: 28px;
+}
+
+.nav-toggle.open span:nth-child(1){
+    transform: translateX(-50%) translateY(8px) rotate(45deg);
+}
+
+.nav-toggle.open span:nth-child(2){
+    opacity: 0;
+}
+
+.nav-toggle.open span:nth-child(3){
+    transform: translateX(-50%) translateY(-8px) rotate(-45deg);
+}
+
+.header-actions .header-cta,
+.navDropdownActions .header-cta{
     font-size: 0.95rem;
     border-radius: 999px;
     border: none;
@@ -64,6 +114,68 @@ body{
     font-weight: 700;
     box-shadow: 0 8px 18px rgba(26, 96, 255, 0.28);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.navDropdownActions{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .header{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 18px 20px;
+    }
+
+    .nav-toggle{
+        display: flex;
+        z-index: 60;
+    }
+
+    .navLinks{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: #ffffff;
+        border-top: 1px solid rgba(0,0,0,0.08);
+        transform: translateY(-10px);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+        box-shadow: 0 18px 40px rgba(16, 29, 55, 0.12);
+    }
+
+    .navLinks.active{
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .navLinks ul{
+        flex-direction: column;
+        gap: 16px;
+        padding: 18px 20px 12px;
+    }
+
+    .navLinks li a{
+        width: 100%;
+        display: block;
+        padding: 8px 0;
+        font-size: 1rem;
+    }
+
+    .navDropdownActions{
+        display: block;
+        padding: 0 20px 20px;
+    }
+
+    .header-actions{
+        display: none;
+    }
 }
 
 .header-actions .header-cta:hover,

@@ -13,12 +13,12 @@ const About = () => {
           <div className="about-text">
             <h3>Who We Are</h3>
             <p>
-              AK is a premium car brand committed to delivering exceptional quality, performance, and 
+              EonMotors is a premium car brand committed to delivering exceptional quality, performance, and 
               luxury to drivers around the world. With decades of engineering excellence, we craft vehicles 
               that combine cutting-edge technology with timeless design.
             </p>
             <p>
-              Every AK vehicle is built with precision, passion, and a dedication to pushing the boundaries 
+              Every AK vehicle is built with precision, passion, and a dedication to pushing the bou ndaries 
               of automotive innovation. We believe that driving should be an experience—one filled with 
               confidence, comfort, and pure joy.
             </p>
