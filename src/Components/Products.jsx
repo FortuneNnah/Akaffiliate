@@ -6,7 +6,7 @@ const Products = () => {
       id: 1,
       name: 'Tesla Model S',
       price: 89000,
-      image: 'assets/img/Car1.jpg',
+      image: '/src/assets/Car1.jpg',
       features: ['300 mile range', 'Autopilot', 'Premium Audio'],
       badge: 'Popular'
     },
@@ -14,7 +14,7 @@ const Products = () => {
       id: 2,
       name: 'BMW iX',
       price: 84250,
-      image: 'assets/img/Car1.jpg',
+      image: '/src/assets/Car2.jpg',
       features: ['Luxury Interior', 'All-Wheel Drive', 'Advanced Tech'],
       badge: null
     },
@@ -22,7 +22,7 @@ const Products = () => {
       id: 3,
       name: 'Audi e-tron GT',
       price: 103000,
-      image: 'assets/img/Car1.jpg',
+      image: '/src/assets/Car3.jpg',
       features: ['Performance', 'Rapid Charging', '4 Seats'],
       badge: 'Premium'
     },
@@ -30,7 +30,7 @@ const Products = () => {
       id: 4,
       name: 'Porsche Taycan',
       price: 79900,
-      image: 'assets/img/Car1.jpg',
+      image: '/src/assets/Car4.jpg',
       features: ['Sports Performance', 'Fast Charge', 'Dual Motor'],
       badge: 'Deal'
     }

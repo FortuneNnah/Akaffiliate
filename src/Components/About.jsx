@@ -66,7 +66,7 @@ const About = () => {
           </div>
 
           <div className="about-image">
-            <img src="assets/img/Car1.jpg" alt="EonMotors Vehicle" />
+            <img src="/src/assets/Car1.jpg" alt="EonMotors Vehicle" />
             <div className="image-overlay"></div>
           </div>
         </div>

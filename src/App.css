@@ -200,7 +200,7 @@ body{
 
 .herosection{
     position: relative;
-    background-image: url(assets/img/Car1.jpg);
+    background-image: url('assets/Car1.jpg');
     background-size: cover;
     background-position: center;
     height: 92vh;
