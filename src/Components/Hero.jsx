@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <section className="herosection" aria-label="Hero section">
+    <section id="home" className="herosection" aria-label="Hero section">
       <div className="hero-overlay" />
       <div className="herotxt">
         <small>Premium Auto Leasing</small>
