@@ -32,9 +32,6 @@ const Header = () => {
           <li><a href="#blog" onClick={closeMenu}>Blog</a></li>
           <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
         </ul>
-        <div className="navDropdownActions">
-          <a href="#quote" className="btn header-cta" onClick={closeMenu}>Request a Quote</a>
-        </div>
       </nav>
 
       <div className="header-actions">
