@@ -722,7 +722,7 @@ body{
 
 .section-intro h2 {
     font-size: clamp(2rem, 4vw, 3rem);
-    color: #1f3358;
+    color: #f1f1f1;
     margin-bottom: 16px;
     font-weight: 800;
     line-height: 1.1;
@@ -741,7 +741,7 @@ body{
 }
 
 .services-section {
-    background: #ffffff;
+    background: url("src/assets/Car6.jpg") no-repeat center center/cover;
 }
 
 .services-container,
