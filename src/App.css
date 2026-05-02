@@ -245,7 +245,7 @@ body{
     font-size: clamp(2rem, 5vw, 3rem);
     color: #2a3d66;
     font-weight: 800;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     line-height: 1.2;
 }
 
@@ -264,6 +264,7 @@ body{
 }
 
 .about-text h3 {
+    text-align: center;
     font-size: 2.2rem;
     color: #2a3d66;
     margin-bottom: 24px;
