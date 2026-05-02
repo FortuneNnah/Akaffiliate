@@ -1,4 +1,8 @@
 import React from 'react'
+import car1 from '../assets/Car1.jpg'
+import car2 from '../assets/Car2.jpg'
+import car3 from '../assets/Car3.jpg'
+import car4 from '../assets/Car4.jpg'
 
 const Products = () => {
   const cars = [
@@ -6,7 +10,7 @@ const Products = () => {
       id: 1,
       name: 'Tesla Model S',
       price: 89000,
-      image: '/src/assets/Car1.jpg',
+      image: car1,
       features: ['300 mile range', 'Autopilot', 'Premium Audio'],
       badge: 'Popular'
     },
@@ -14,7 +18,7 @@ const Products = () => {
       id: 2,
       name: 'BMW iX',
       price: 84250,
-      image: '/src/assets/Car2.jpg',
+      image: car2,
       features: ['Luxury Interior', 'All-Wheel Drive', 'Advanced Tech'],
       badge: null
     },
@@ -22,7 +26,7 @@ const Products = () => {
       id: 3,
       name: 'Audi e-tron GT',
       price: 103000,
-      image: '/src/assets/Car3.jpg',
+      image: car3,
       features: ['Performance', 'Rapid Charging', '4 Seats'],
       badge: 'Premium'
     },
@@ -30,7 +34,7 @@ const Products = () => {
       id: 4,
       name: 'Porsche Taycan',
       price: 79900,
-      image: '/src/assets/Car4.jpg',
+      image: car4,
       features: ['Sports Performance', 'Fast Charge', 'Dual Motor'],
       badge: 'Deal'
     }
