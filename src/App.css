@@ -206,8 +206,7 @@ body{
     height: 92vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 .hero-overlay{
@@ -334,7 +333,7 @@ body{
 }
 
 .about-text h3 {
-    text-align: center;
+    /* text-align: center; */
     font-size: 2.2rem;
     color: #2a3d66;
     margin-bottom: 24px;
